@@ -13,5 +13,21 @@ namespace AM.ApplicationCore.Domain
         public  int  PlaneId { get; set; }
         public PlaneType PlaneType { get; set;}
         public ICollection<Flight> flights { get; set; }
+        public override string ToString()
+        {
+            return "La capacite = "+Capacity;
+        }
+        //public Plane()
+        //{
+
+        //}
+        //public Plane(PlaneType pt, int capacity, DateTime date)
+        //{
+        //    this.Capacity = capacity;
+        //    this.ManufactureDate = date;
+        //    this.PlaneType = pt;
+        //}
+
+
     }
 }

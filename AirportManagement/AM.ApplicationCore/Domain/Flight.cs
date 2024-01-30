@@ -15,5 +15,9 @@ namespace AM.ApplicationCore.Domain
         public   int  EstimatedDiration { get; set; }
         public Plane myplane { get; set; }
         public ICollection<Passenger> passengers { get; set; }
+        public override string ToString()
+        {
+            return "la destination = "+Destination+"la durée = "+EstimatedDiration;
+        }
     }
 }
