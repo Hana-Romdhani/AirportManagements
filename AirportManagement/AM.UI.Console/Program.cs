@@ -1,10 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AM.ApplicationCore.Domain;
+using AM.ApplicationCore.Service;
 using System.Net.Mail;
 
 Console.WriteLine("Hello, World!");
-//Plane p1 = new Plane();
-//p1.PlaneID = 1;
+Plane p1 = new Plane();
+p1.PlaneId = 1;
 //p1.capacity = 1;
 //p1.ManuFactureDate = new DateTime(2021, 01, 30);
 //p1.PlaneType = PlaneType.Boing;
@@ -43,3 +44,24 @@ Traveller pas = new Traveller
 };
 stf.PassengerType();
 pas.PassengerType();
+
+FlightMethods fm = new FlightMethods
+{
+    Flights = TestData.listFlights
+};
+foreach (var item in fm.GetFlightDates("Paris"))
+{
+    Console.WriteLine(item);
+}
+fm.GetFlights("Destination", "Madrid");
+Console.WriteLine("/*****************************/");
+fm.ShowFlightDetails(TestData.BoingPlane);
+fm.ProgrammedFlightNumber(new DateTime(2022, 02, 01, 21, 10, 10));
+Console.WriteLine("/*****************************/");
+
+fm.DurationAverage("Paris");
+Console.WriteLine("/************List des Vol *****************/");
+foreach (var item in fm.OrderedDurationFlights())
+{
+    Console.WriteLine(item);
+}
