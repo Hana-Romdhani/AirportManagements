@@ -30,4 +30,16 @@ Passenger ps1 = new Passenger
     EmailAddress="hana@gmail.com"
 };
 Console.WriteLine(ps1.ToString());
+Console.WriteLine(ps1.CheckProfile("hana", "Romdhani"));
 Console.WriteLine(ps1.CheckProfile("hana","Romdhani", "hana@gmail.com"));
+Staff stf = new Staff
+{
+    Function="HEHUH"
+
+};
+Traveller pas = new Traveller
+{
+    Nationality="Tunis"
+};
+stf.PassengerType();
+pas.PassengerType();
