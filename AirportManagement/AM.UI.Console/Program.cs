@@ -65,3 +65,8 @@ foreach (var item in fm.OrderedDurationFlights())
 {
     Console.WriteLine(item);
 }
+Console.WriteLine("/************Passenger *****************/");
+foreach (var item in fm.SeniorTravellers(TestData.flight1))
+{
+    Console.WriteLine(item);
+}

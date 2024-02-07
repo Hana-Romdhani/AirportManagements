@@ -12,7 +12,7 @@ namespace AM.ApplicationCore.Service
     {
         public List<Flight> Flights { get; set; }=new List<Flight>();
 
-       
+
 
         public List<DateTime> GetFlightDates(string destination)
         {
@@ -114,6 +114,14 @@ namespace AM.ApplicationCore.Service
                                  orderby f.EstimatedDiration descending
                                  select f;
             return query.ToList();
+        }
+
+        public List<Passenger> SeniorTravellers(Flight flight)
+        {
+            IEnumerable<Passenger> query = from p in flight.passengers.OfType<Passenger>()
+                                           orderby p.BithDate ascending
+                                           select p;
+            return query.Take(3).ToList();
         }
     }
 }
