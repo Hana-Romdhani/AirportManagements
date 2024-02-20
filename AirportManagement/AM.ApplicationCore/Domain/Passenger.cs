@@ -8,7 +8,7 @@ namespace AM.ApplicationCore.Domain
 {
      public class Passenger 
     {
-
+        public int PassengerId { get; set; }
         public int TelNumber { get; set; }
         public string LastName { get; set;}
         public string FirstName { get; set;}

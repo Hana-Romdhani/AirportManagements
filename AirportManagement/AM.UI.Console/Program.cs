@@ -56,6 +56,10 @@ foreach (var item in fm.GetFlightDates("Paris"))
 fm.GetFlights("Destination", "Madrid");
 Console.WriteLine("/*****************************/");
 fm.ShowFlightDetails(TestData.BoingPlane);
+Console.WriteLine("/************retour avec delegue sans parametre    *****************/");
+fm.FlightDetailsdel(TestData.BoingPlane);
+Console.WriteLine("/*******************  *****************/");
+
 fm.ProgrammedFlightNumber(new DateTime(2022, 02, 01, 21, 10, 10));
 Console.WriteLine("/*****************************/");
 
@@ -70,3 +74,21 @@ foreach (var item in fm.SeniorTravellers(TestData.flight1))
 {
     Console.WriteLine(item);
 }
+Console.WriteLine("/************Flights date  *****************/");
+
+
+fm.DestinationGroupedFlights();
+Console.WriteLine("/*****************************/");
+
+Passenger passe = new Passenger
+{
+    FirstName= "hana",
+    LastName= "romdhani",
+
+
+};
+Console.WriteLine("Before:", passe);
+passe.UpperFullName();
+Console.WriteLine("After :", passe);
+
+
