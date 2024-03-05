@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AM.ApplicationCore.Domain;
 using AM.ApplicationCore.Service;
+using AM.Infrastructure;
 using System.Net.Mail;
 
 Console.WriteLine("Hello, World!");
@@ -90,5 +91,9 @@ Passenger passe = new Passenger
 Console.WriteLine("Before:", passe);
 passe.UpperFullName();
 Console.WriteLine("After :", passe);
-
+AMContext context = new AMContext
+{
+};
+context.Flights.Add(TestData.flight2);
+context.SaveChanges();
 
