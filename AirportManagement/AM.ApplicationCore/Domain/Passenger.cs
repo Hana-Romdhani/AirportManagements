@@ -14,22 +14,26 @@ namespace AM.ApplicationCore.Domain
         [RegularExpression("^[0-9]{8}$")]
 
         public int TelNumber { get; set; }
-        public string LastName { get; set;}
-        [MinLength(3,ErrorMessage ="Longeur Minimale 3!")]
-        [MaxLength(25, ErrorMessage = "Longeur Maximale 25!")]
-        public string FirstName { get; set; }
+
+       public FullName FullName { get; set; }
+        
+
+
         [DataType(DataType.EmailAddress)]
         public string EmailAddress { get; set;}
-        [Key, StringLength(7)]
+        [Key]
+        [StringLength(7)]
         public string PasswordNumber { get; set;}
 
         [Display(Name ="Date of Birth")]
         [DataType(DataType.DateTime)]
         public DateTime BithDate { get; set;}
-        public ICollection<Flight> flights { get; set; }
+     //   public ICollection<Flight> flights { get; set; }
+        public ICollection<Ticket> tickets { get; set; }
+
         public override string ToString()
         {
-            return "FirstName="+FirstName+"Lastname"+LastName
+            return "FirstName="+FullName.FirstName+"Lastname"+ FullName.LastName
             ;
         }
 
@@ -51,10 +55,10 @@ namespace AM.ApplicationCore.Domain
 
             if (val==null)
             {
-                return this.FirstName == firstname && this.LastName == lastname;
+                return this.FullName.FirstName == firstname && this.FullName.LastName == lastname;
             }  else
             {
-                return this.FirstName == firstname && this.LastName == lastname && this.EmailAddress == val;
+                return this.FullName.FirstName == firstname && this.FullName.LastName == lastname && this.EmailAddress == val;
             }
 
         }

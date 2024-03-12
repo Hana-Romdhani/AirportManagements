@@ -1,4 +1,5 @@
 ﻿using AM.ApplicationCore.Domain;
+using AM.Infrastructure.configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System;
@@ -19,12 +20,28 @@ namespace AM.Infrastructure
              Initial Catalog=AirportManagementDBhanaromdhani;Integrated Security=true");
             base.OnConfiguring(optionsBuilder);
         }
+      
         public DbSet<Flight> Flights { get; set; }
         public DbSet<Plane> Planes { get; set; }
         public DbSet<Passenger> Passengers { get; set; }
 
         public DbSet<Staff> Staff { get; set; }
         public DbSet<Traveller> Travellers { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new PlaneConfiguration());
+            modelBuilder.ApplyConfiguration(new FlightConfiguration());
+            modelBuilder.ApplyConfiguration(new PassengerConfiguration());
+            modelBuilder.ApplyConfiguration(new TicketsConfiguration());
+
+            modelBuilder.Entity<Staff>().ToTable("Staffs");
+            modelBuilder.Entity<Traveller>().ToTable("Traveller");
+
+        }
+        protected override void ConfigureConventions(ModelConfigurationBuilder configBuilder)
+        {
+            configBuilder.Properties<DateTime>().HaveColumnType("date");
+        }
 
 
     }

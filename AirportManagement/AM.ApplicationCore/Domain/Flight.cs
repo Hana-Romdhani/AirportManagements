@@ -15,11 +15,13 @@ namespace AM.ApplicationCore.Domain
         public Plane myplane { get; set; }
 
         public string AirlineLogo { get; set; }
-        public ICollection<Passenger> passengers { get; set; }
-        
+       // public ICollection<Passenger> passengers { get; set; }
+        public ICollection<Ticket> tickets { get; set; }
+
         public override string ToString()
         {
             return "la destination = " + Destination + "la durée = " + EstimatedDiration;
         }
+
     }
 }

@@ -27,8 +27,10 @@ Console.WriteLine(p3);
 
 Passenger ps1 = new Passenger
 {
+    FullName = new FullName{
     FirstName = "hana",
-    LastName = "Romdhani",
+    LastName = "Romdhani"},
+    
     EmailAddress="hana@gmail.com"
 };
 Console.WriteLine(ps1.ToString());
@@ -71,10 +73,10 @@ foreach (var item in fm.OrderedDurationFlights())
     Console.WriteLine(item);
 }
 Console.WriteLine("/************Passenger *****************/");
-foreach (var item in fm.SeniorTravellers(TestData.flight1))
-{
-    Console.WriteLine(item);
-}
+//foreach (var item in fm.SeniorTravellers(TestData.flight1))
+//{
+//    Console.WriteLine(item);
+//}
 Console.WriteLine("/************Flights date  *****************/");
 
 
@@ -83,8 +85,8 @@ Console.WriteLine("/*****************************/");
 
 Passenger passe = new Passenger
 {
-    FirstName= "hana",
-    LastName= "romdhani",
+    FullName = new FullName{ FirstName= "hana",
+    LastName= "romdhani",}
 
 
 };

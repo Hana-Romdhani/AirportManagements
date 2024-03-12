@@ -171,9 +171,10 @@ namespace AM.ApplicationCore.Service
             //                               orderby p.BithDate ascending
             //                               select p;
 
-            IEnumerable<Passenger> lamdaquery = flight.passengers.OfType<Traveller>()
-                .OrderBy(p=>p.BithDate);
-            return lamdaquery.Take(3).ToList();
+            /* IEnumerable<Passenger> lamdaquery = flight.passengers.OfType<Traveller>()
+                   .OrderBy(p=>p.BithDate);
+               return lamdaquery.Take(3).ToList();*/
+            return null;
         }
         public void DestinationGroupedFlights()
 
