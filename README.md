@@ -55,7 +55,7 @@ Before you begin, ensure you have the following installed:
 
 2. Configure the database:
 
-    - Open the `AMContext.cs` file and update the database connection string.
+    - Open the `AMContext.cs` file and update the database connection URL.
     - Apply the migrations to create the database:
 
     ```bash
