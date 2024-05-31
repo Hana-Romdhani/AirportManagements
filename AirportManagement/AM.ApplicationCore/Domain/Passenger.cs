@@ -29,7 +29,7 @@ namespace AM.ApplicationCore.Domain
         [DataType(DataType.DateTime)]
         public DateTime BithDate { get; set;}
      //   public ICollection<Flight> flights { get; set; }
-        public ICollection<Ticket> tickets { get; set; }
+        public virtual ICollection<Ticket> tickets { get; set; }
 
         public override string ToString()
         {

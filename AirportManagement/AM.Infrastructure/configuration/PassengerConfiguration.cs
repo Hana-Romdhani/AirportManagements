@@ -12,11 +12,12 @@ namespace AM.Infrastructure.configuration
     public class PassengerConfiguration : IEntityTypeConfiguration<Passenger>
     {
         public void Configure(EntityTypeBuilder<Passenger> builder)
-        {
+        {//ownerd annotion with fluentapi
             builder.OwnsOne(p => p.FullName,
                 full=> { 
                     full.Property(f=>  f.FirstName).HasMaxLength(30).HasColumnName("PassFilghtsName");
                     });
+
             /*builder.HasDiscriminator<string>("IsTraveller")
                 .HasValue<Passenger>("0")
                 .HasValue<Traveller>("1")

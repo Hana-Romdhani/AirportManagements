@@ -17,5 +17,6 @@ namespace AM.ApplicationCore.Interfaces
         public List<Flight> OrderedDurationFlights();
         public List<Passenger> SeniorTravellers(Flight flight);
         public void   DestinationGroupedFlights();
+
     }
 }

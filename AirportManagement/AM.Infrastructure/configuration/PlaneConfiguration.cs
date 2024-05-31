@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,7 +18,6 @@ namespace AM.Infrastructure.configuration
             builder.HasKey(p => p.PlaneId);
             builder.ToTable("myPlanes");
             builder.Property(p => p.Capacity).HasColumnName("PlaneCapacity");
-
         }
     }
 }

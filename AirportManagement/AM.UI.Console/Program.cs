@@ -52,10 +52,15 @@ FlightMethods fm = new FlightMethods
 {
     Flights = TestData.listFlights
 };
+
 foreach (var item in fm.GetFlightDates("Paris"))
 {
     Console.WriteLine(item);
 }
+
+
+
+
 fm.GetFlights("Destination", "Madrid");
 Console.WriteLine("/*****************************/");
 fm.ShowFlightDetails(TestData.BoingPlane);
@@ -96,6 +101,9 @@ Console.WriteLine("After :", passe);
 AMContext context = new AMContext
 {
 };
+
 context.Flights.Add(TestData.flight2);
+
 context.SaveChanges();
 
+Console.WriteLine(context.Flights.First().myplane.Capacity);

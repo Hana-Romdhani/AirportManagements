@@ -18,9 +18,13 @@ namespace AM.Infrastructure.configuration
                 t.PassengerFK,
                 t.FlightFK
             });
-            builder.HasOne(t => t.MyPassengers).WithMany(p => p.tickets).HasForeignKey(t => t.PassengerFK);
+            builder.HasOne(t => t.MyPassengers)
+                .WithMany(p => p.tickets)
+                .HasForeignKey(t => t.PassengerFK);
 
-            builder.HasOne(t => t.MyFlights).WithMany(f => f.tickets).HasForeignKey(t => t.FlightFK);
+            builder.HasOne(t => t.MyFlights)
+                .WithMany(f => f.tickets)
+                .HasForeignKey(t => t.FlightFK);
         }
     }
 }
