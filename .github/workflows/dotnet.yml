@@ -16,10 +16,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Setup .NET
+
+    - name: Setup .NET SDK
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 7.0.x
+        dotnet-version: 7.0.16
+
     - name: Build
       run: dotnet build --no-restore AirportManagement/AM.UI.Web/AM.UI.Web.csproj
 
