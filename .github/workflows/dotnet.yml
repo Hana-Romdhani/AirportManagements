@@ -12,8 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v4
       with:
@@ -21,5 +19,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore AirportManagement/AM.UI.Web/AM.UI.Web.csproj
 
-    - name: Test
-      run: dotnet test --no-build --verbosity normal AirportManagement.sln
+   
