@@ -1,0 +1,222 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.UI.Console\\AM.UI.Console.csproj": {}
+  },
+  "projects": {
+    "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+        "projectName": "AM.ApplicationCore",
+        "projectPath": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+        "packagesPath": "C:\\Users\\hanar\\.nuget\\packages\\",
+        "outputPath": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.ApplicationCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hanar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj",
+        "projectName": "AM.Infrastructure",
+        "projectPath": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\hanar\\.nuget\\packages\\",
+        "outputPath": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hanar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
+                "projectPath": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.UI.Console\\AM.UI.Console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.UI.Console\\AM.UI.Console.csproj",
+        "projectName": "AM.UI.Console",
+        "projectPath": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.UI.Console\\AM.UI.Console.csproj",
+        "packagesPath": "C:\\Users\\hanar\\.nuget\\packages\\",
+        "outputPath": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.UI.Console\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hanar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
+                "projectPath": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj"
+              },
+              "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj": {
+                "projectPath": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "wAJE9zBnPaLFCpkwq0Py+DXG9J0XzwT3ntAmN+wO6j3dx1rfpi/EuOZfwVzYxf7pzcwAG06gM6B6lc/4A8ivxg==",
+  "success": true,
+  "projectFilePath": "G:\\Esprit4TWIN4\\S2\\SI ACP.net\\lesAtelier\\Hana-Romdhani\\AirportManagements\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.16\\microsoft.entityframeworkcore.7.0.16.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.16\\microsoft.entityframeworkcore.abstractions.7.0.16.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.16\\microsoft.entityframeworkcore.analyzers.7.0.16.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\hanar\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

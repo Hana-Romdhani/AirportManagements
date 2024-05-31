@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AM.ApplicationCore", "AM.Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AM.Infrastructure", "AM.Infrastructure\AM.Infrastructure.csproj", "{84291A62-5899-40FB-B411-E74E82E6321B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.UI.Web", "AM.UI.Web\AM.UI.Web.csproj", "{1C6EBC35-070F-4EF0-A7CF-5EB2C2582B25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AM.UI.Web", "AM.UI.Web\AM.UI.Web.csproj", "{1C6EBC35-070F-4EF0-A7CF-5EB2C2582B25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{FAA38313-683A-4A6F-8457-BF05AA57F16D}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AM.ApplicationCore",
+    "\\AM.ApplicationCore\\Domain",
+    "\\AM.Infrastructure",
+    "\\AM.UI.Web",
+    "\\AM.UI.Web\\Views",
+    "\\AM.UI.Web\\Views\\Flights"
+  ],
+  "SelectedNode": "\\AirportManagement.sln",
+  "PreviewInSolutionExplorer": false
+}
